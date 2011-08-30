@@ -1,0 +1,558 @@
+/*
+Theme Name: Webpoint
+Theme URI: http://www.alexandremagno.net
+Description: The new Webpoint theme, using 960 grid system
+Author: Alexandre Magno
+Version: 1.0
+Tags: 960gs, two-columns, horizontal menu, widget, theme
+*/
+
+/*
+ * General
+ */
+
+body {
+ background-color: #E2DDCB;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.horizontal-list li  {
+  float: left;
+}
+
+
+.main {
+  background-color: #D4CFBB;
+}
+
+/*
+ * Buttons
+ */
+
+.button.primary {
+  color: white;
+  padding: 2px 12px;
+  border-top: 1px solid #a5d6dd;
+  background: #5DC0CD;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px 1px #7a7a7a;
+  -moz-box-shadow: 0px 0px 0px 1px #7a7a7a;
+  box-shadow: 1px 1px 1px 1px #7a7a7a;
+  text-shadow: 0px -1px 0px #BCBCBC;
+}
+
+.button.primary:hover {
+  background: #8DBCBC;
+  color: white;
+}
+
+.button.secondary {
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #f9f9f9; /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #eeeeee 42%, #eeeeee 56%, #e3e3e3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(42%,#eeeeee), color-stop(56%,#eeeeee), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* W3C */
+}
+
+/*
+ * Links
+ */
+
+.main-content .image-link:hover {
+  background: none;
+  border: none;
+}
+
+/*
+ * Header
+ */
+
+.topbar {
+  background-color: #9AC3C4;
+  overflow: hidden;
+}
+
+.topbar ul {
+  float: right;
+  margin: 0;
+}
+
+.topbar ul li {
+  margin: 5px 10px;
+}
+
+.topbar ul li a {
+  color: white;
+  padding: 4px 0;
+}
+
+.topbar ul li span {
+  display: inline-block;
+  background: transparent none no-repeat center;
+  width: 14px;
+  height: 14px;
+  margin: -2px 6px;
+}
+
+.topbar .br span {
+  background-image: url('images/ico-brazil.png');
+}
+
+.topbar .en span {
+  background-image: url('images/ico-usa.png');
+}
+
+/*
+ * title
+ */
+.title-bar {
+  background: #deebeb; /* Old browsers */
+  background: -moz-linear-gradient(top, #deebeb 0%, #cadfdf 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#deebeb), color-stop(100%,#cadfdf)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #deebeb 0%,#cadfdf 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #deebeb 0%,#cadfdf 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #deebeb 0%,#cadfdf 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deebeb', endColorstr='#cadfdf',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #deebeb 0%,#cadfdf 100%); /* W3C */
+}
+
+.title-bar .branding a {
+   background: transparent url("images/logo.png") no-repeat center center;
+   display: block;
+   float: left;
+   width: 125px;
+   height: 31px;
+   margin: 8px 15px 15px 10px;
+}
+
+.title-bar quote {
+  font-family: 'Artifika', arial, serif;
+  font-style: italic;
+  color: #4D6C7F;
+  font-size: 14px;
+  display: block;
+}
+
+.title-bar .branding span {
+  display: none;
+}
+
+/*
+ * menu bar
+ */
+
+.menu-bar {
+  background-color: #4D6C7F;
+  position: reltive;
+
+}
+
+.menu-bar li, .menu-bar .children li {
+  padding: 6px;
+}
+
+.menu-bar .children li {
+  margin-left: 0;
+}
+
+.menu-bar a {
+  color: white;
+}
+
+.menu-bar li:hover, .menu-bar .children li:hover {
+  background-color: #8BACBF;
+  color: #0A3A56;
+}
+
+.menu-bar .children {
+  position: absolute;
+  background-color: #4D6C7F;
+  margin: 5px -6px;
+}
+
+.menu-bar .children li {
+  float: none;
+}
+
+
+/*
+ * sidebar and content
+ */
+
+.main-content h2 {
+  border-bottom: 1px dashed #FFBF40;
+}
+
+.main-content h2 a {
+  font-family: 'Nunito', sans-serif;
+  background-color: none;
+  text-decoration: none;
+  color: #A60000;
+  -moz-text-shadow: 2px 2px 1px #E5D2CC;
+  -webkit-text-shadow: 2px 2px 1px #E5D2CC;
+  text-shadow: 2px 2px 1px #E5D2CC;
+}
+
+.main-content h2 a:hover {
+  background: none;
+  border-bottom: none;
+  color: #FF4040;
+}
+
+.main-content a {
+  text-decoration: none;
+  font-style: italic;
+  color: #5A4CAD;
+  padding: 0 3px;
+
+}
+
+.main-content a:hover {
+  background-color: #E8E6F7;
+  border-bottom: 1px solid #918BB2;
+  color: #201175;
+}
+
+/*
+ * sidebar
+ */
+
+.sidebar {
+  font-size: 12px;
+}
+
+.sidebar .box {
+  background-color: white;
+  border: 1px solid #DDD;
+  margin: 10px 5px;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+}
+
+.sidebar .box h3 {
+  border-top: 1px solid #e6e5e1;
+  border-right: 1px solid #e6e5e1;
+  border-left: 1px solid #e6e5e1;
+  padding: 5px 10px;
+  font-family: 'Nunito',sans-serif;
+  color: #4D6C7F;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #f9f9f9; /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #f7f6f1 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(0%,#f7f6f1), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%,#f7f6f1 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%,#f7f6f1 0%,#ffffff 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%,#f7f6f1 0%,#ffffff 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #f9f9f9 0%,#f7f6f1 0%,#ffffff 100%); /* W3C */
+}
+
+.sidebar .box div {
+  padding: 5px;
+  text-align: center;
+}
+
+
+/*
+ * About
+ */
+
+.sidebar .box.about li {
+  height: 25px;
+  float: left;
+  margin: 3px 5px 0 0;
+}
+
+.sidebar .box.about li a:hover {
+  background-color: #4D6C7F;
+}
+
+.sidebar .box.about .author {
+  background-color: #DDEBEB;
+  border: 1px solid #9CB7B7;
+  float: left;
+  padding: 2px;
+  margin: 8px;
+}
+
+
+.sidebar .about ul {
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.sidebar .social-icons {
+  height: 40px;
+  width: 180px;
+}
+
+.sidebar .social-icons a:hover {
+  background: none !important;
+}
+
+
+/*
+ * Content
+ */
+
+.main-content {
+  background-color: #F7F5EF;
+}
+
+/*
+ * Post
+ */
+
+.post-list {
+  margin: 10px;
+}
+
+.post-list .post-item {
+  padding: 10px 0;
+  float: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.post-list ul li img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.post-list .content {
+  display: block;
+}
+
+.taxonomy {
+  margin: 0;
+}
+
+.taxonomy li {
+  float: left;
+  margin: 0 5px;
+}
+
+.taxonomies li {
+  margin-bottom: 5px;
+}
+
+.taxonomies .categories h4 {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background: url('images/ico-category.png') no-repeat center center;
+}
+
+.taxonomies .tags h4 {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background: url('images/ico-tags.png') no-repeat center center;
+}
+
+.taxonomies h4 span {
+  display: none;
+}
+
+/*
+ * Item of a post
+ */
+
+.post-item h2 {
+  font-size: 23px;
+}
+
+/*
+ * Full post
+ */
+
+.post-full {
+  padding: 20px;
+}
+
+.post-full h2 {
+  color: #FF4040;
+}
+
+.post-full .taxonomies {
+  float: left;
+  width: 90%;
+  overflow: hidden;
+}
+
+/*
+ * breadcrumb
+ */
+
+.breadcrumb {
+  padding: 10px 5px;
+  overflow: hidden;
+  clear: both;
+}
+
+.breadcrumb .current {
+  font-weight: bold;
+  color: #4D6C7F;
+  font-style: italic;
+  padding: 3px;
+}
+
+.breadcrumb ul,. breadcrumb ul li, .breadcrumb a {
+  float: left;
+}
+
+/*
+ * Date
+ */
+
+.date-info {
+  float: right;
+}
+
+.date-info p {
+  background: transparent url('images/ico-calendar.png') no-repeat 0 0;
+  width: 48px;
+  height: 66px;
+}
+
+.date-info p span {
+  font-family: 'Artifika', arial, serif;
+  display: block;
+  margin: -5px 0;
+  text-align: center;
+}
+
+.date-info .week-day {
+  color: white;
+  margin: 5px 9px;
+  padding: 4px;
+}
+
+/*
+ * Secondary categories
+ *
+ */
+
+.secondary {
+  margin: 20px;
+}
+
+.secondary h2 {
+  font-size: 16px;
+}
+
+.secondary h3 {
+  color: white;
+  background-color: #86AFB0;
+  border: 2px solid white;
+  padding: 3px 10px;
+}
+
+.secondary .content {
+  margin: 0  10px 5px;
+}
+
+.secondary .content img {
+  float: left;
+  margin-right: 10px;
+}
+
+.secondary .view-all {
+  float: right;
+}
+
+.secondary .date {
+  color: #999;
+  font-size: 10px;
+}
+
+/*
+ * Footer
+ */
+
+.footer div {
+  margin: 20px 60px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer {
+  background-color: #9AC3C4;
+  overflow: hidden;
+}
+
+.footer a {
+  color: #09609c;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #4D6C7F;
+}
+
+.footer h2 {
+  color: #616869;
+  font-size: 16px;
+}
+
+
+/*
+ * Bottom bar
+ */
+
+.bottombar {
+  background-color: #4D6C7F;
+  overflow: hidden;
+}
+
+.bottombar ul {
+  float: right;
+  margin: 0;
+}
+
+.bottombar ul li {
+  margin: 5px 10px;
+}
+
+.bottombar ul li a {
+  color: white;
+  padding: 4px 0;
+}
+
+.bottombar ul li span {
+  display: inline-block;
+  background: transparent url('images/ico-rss.png') no-repeat center;
+  width: 14px;
+  height: 14px;
+  margin: -2px 6px;
+}
+

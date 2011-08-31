@@ -4,6 +4,7 @@ set :repository,  "git@github.com:alexanmtz/Webpoint-Wordpress-theme.git"
 set :scm, "git"
 set :branch, "master"
 set :user, "alexmagno"
+set :keep_releases, 2
 set :deploy_via, :copy
 set :use_sudo, false
 set :host, "alexandremagno.net"
@@ -48,8 +49,16 @@ namespace :deploy do
     puts "creating the application directory..."
     run "mkdir -p #{target_test_dir}"
     puts "copying last release..."
-
+    run "rm -rf #{target_test_dir}/*"
     run "cp -r #{latest_release}/* #{target_test_dir}"
     puts "completed!"
   end
+
+  set :branch do
+    default_tag = `git tag`.split("\n").last
+    tag = Capistrano::CLI.ui.ask "Tag to deploy (make sure to push the tag first): [#{default_tag}] "
+    tag = default_tag if tag.empty?
+    tag
+  end
+
 end

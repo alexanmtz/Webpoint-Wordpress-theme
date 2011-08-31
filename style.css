@@ -186,8 +186,9 @@ h3 {
 
 .menu-bar .children {
   position: absolute;
-  background-color: #8BACB;
+  background-color: #8BACBF;
   margin: 5px -6px;
+  overflow: hidden;
 }
 
 .menu-bar .children li {

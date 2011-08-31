@@ -38,7 +38,8 @@ namespace :deploy do
     puts "creating the application directory..."
     #run "mkdir #{target_dir}"
     puts "copying last release..."
-    run "cp -r #{latest_release} #{target_dir}"
+
+    run "cp -r #{latest_release}/* #{target_dir}"
     puts "completed!"
   end
 end

@@ -9,6 +9,7 @@ set :use_sudo, false
 set :host, "alexandremagno.net"
 set :deploy_to,    "#{application}/deploy"
 set :target_dir, "#{host}/blog/wp-content/themes/#{application}"
+set :target_test_dir, "#{host}/blogantigo/wp-content/themes/#{application}"
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
@@ -31,15 +32,24 @@ role :web, "alexandremagno.net"                          # Your HTTP server, Apa
 
 namespace :deploy do
   task :default do
-     copy_theme
+     prod
   end
 
-  task :copy_theme do
+  task :prod do
     puts "creating the application directory..."
-    #run "mkdir #{target_dir}"
+    run "mkdir -p #{target_dir}"
     puts "copying last release..."
 
     run "cp -r #{latest_release}/* #{target_dir}"
+    puts "completed!"
+  end
+
+  task :testing do
+    puts "creating the application directory..."
+    run "mkdir -p #{target_test_dir}"
+    puts "copying last release..."
+
+    run "cp -r #{latest_release}/* #{target_test_dir}"
     puts "completed!"
   end
 end

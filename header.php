@@ -33,10 +33,10 @@
 <div class="container_16 wrap">
   <div class="main">
     <div class="grid_16 topbar">
-      <!--  <ul class="horizontal-list">
+      <ul class="horizontal-list">
         <li><a class="br" href="#" title="alterar indioma do site para português"><span></span>Portugês</a></li>
         <li><a class="en" href="#" title="change language to english"><span></span>Inglês</a></li>
-      </ul> -->
+      </ul>
     </div>
     <div class="grid_16 title-bar">
       <h1 class="branding">

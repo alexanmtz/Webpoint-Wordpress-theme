@@ -6,8 +6,7 @@
 	      <!--  single post in primary news -->
 	      <div class="post-list primary">
 	        <ul>
-	           <?php $main_posts = new WP_Query( 'posts_per_page=10' ); ?>
-             <?php while ( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
+             <?php while ( have_posts() ) : the_post(); ?>
 	           <li class="post-item">
 	              <h2><a href="<?php the_permalink(); ?>" title="title"><?php the_title(); ?></a></h2>
 	              <div class="date-info">

@@ -3,7 +3,8 @@ Theme Name: Webpoint
 Theme URI: http://www.alexandremagno.net
 Description: The new Webpoint theme, using 960 grid system
 Author: Alexandre Magno
-Version: 1.0
+Github Theme URI: https://github.com/alexanmtz/Webpoint-Wordpress-theme
+Version: 1.0.0
 Tags: 960gs, two-columns, horizontal menu, widget, theme
 */
 
@@ -40,7 +41,7 @@ h3 {
  * Buttons
  */
 
-.button.primary {
+.button.primary, .sidebar .menu a {
   color: white;
   padding: 2px 12px;
   border-top: 1px solid #a5d6dd;
@@ -54,7 +55,7 @@ h3 {
   text-shadow: 0px -1px 0px #BCBCBC;
 }
 
-.button.primary:hover {
+.button.primary:hover, .sidebar .menu a:hover {
   background: #8DBCBC;
   color: white;
 }
@@ -238,8 +239,35 @@ h3 {
  * sidebar
  */
 
-.sidebar {
+.sidebar .related ul {
+  list-style-image: url('images/ico-bullet-sidebar.png');
+  list-style-position: inside;
+  margin: 0 5px;
+}
+
+.sidebar .list li {
+  margin: 5px 0;
+}
+
+.sidebar .menu {
   font-size: 12px;
+  overflow: hidden;
+}
+
+.sidebar .menu li {
+  float: left;
+  margin: 5px;
+  height: 20px;
+}
+
+.sidebar .menu a {
+  display: block;
+  padding: 0 5px;
+  color: white !important;
+}
+
+.sidebar .menu a:hover {
+  background-color: #83ced0 !important;
 }
 
 .sidebar .box {
@@ -273,9 +301,25 @@ h3 {
   background: linear-gradient(top, #f9f9f9 0%,#f7f6f1 0%,#ffffff 100%); /* W3C */
 }
 
+.sidebar .box a {
+  color: #cd195f;
+  font-style: normal;
+}
+
+.sidebar .box a:hover {
+  background-color: none;
+  text-decoration: none;
+  color: #f997bd;
+  background: none;
+}
+
 .sidebar .box div {
   padding: 5px;
-  text-align: center;
+}
+
+
+.sidebar .menu {
+
 }
 
 

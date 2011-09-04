@@ -5,7 +5,7 @@ set :scm, "git"
 set :branch, "master"
 set :user, "alexmagno"
 set :keep_releases, 2
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :use_sudo, false
 set :host, "alexandremagno.net"
 set :deploy_to,    "#{application}/deploy"

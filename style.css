@@ -395,6 +395,8 @@ h3 {
 
 .taxonomy {
   margin: 0;
+  overflow: hidden;
+  float: left;
 }
 
 .taxonomy li {

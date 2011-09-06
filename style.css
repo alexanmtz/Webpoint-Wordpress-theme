@@ -317,6 +317,10 @@ h3 {
   padding: 5px;
 }
 
+.sidebar .box li {
+  margin-left: 10px;
+}
+
 
 .sidebar .menu {
 

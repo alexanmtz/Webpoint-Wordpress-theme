@@ -15,10 +15,11 @@
                 <ul class="taxonomies horizontal-list">
                   <li class="categories">
                     <h4><span>Categories</span></h4>
-                     <ul class="taxonomy">
-                        <?php wp_list_categories('title_li='); ?>
-                     </ul>
+                     <div class="taxonomy">
+                        <?php the_category(); ?>
+                     </div>
                   </li>
+                  <?php if(has_tag()) :?>
                   <li class="tags">
                     <h4><span>Tags</span></h4>
                     <ul class="taxonomy">
@@ -27,6 +28,7 @@
                       ?>
                     </ul>
                   </li>
+                  <?php endif; ?>
                 </ul>
                 <div class="content">
                   <?php the_content(); ?>

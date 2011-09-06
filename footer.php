@@ -7,7 +7,7 @@
            <ul>
            <?php wp_list_categories( array(
                       'title_li' => '',
-                      'hide_empty' => 0,
+                      'hide_empty' => 1,
                        'child_of' => $cat->cat_ID
                   )); ?>
            </ul>

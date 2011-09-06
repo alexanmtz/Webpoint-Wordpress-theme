@@ -6,3 +6,10 @@ The features of the theme include:
 * Multilingual
 * Widget Areas
 * 960 Grid System
+
+Version history
+
+* 1.0.2
+  * Turning flexible list sidebar
+  * Normalizing the category list in post
+   

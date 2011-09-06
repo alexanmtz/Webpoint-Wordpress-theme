@@ -47,6 +47,6 @@
     </div>
     <div class="grid_16 menu-bar">
        <ul class="menu horizontal-list">
-         <?php wp_list_categories( 'title_li=&hide_empty=0' ); ?>
+         <?php wp_list_categories( 'title_li=&hide_empty=1' ); ?>
        </ul>
     </div>

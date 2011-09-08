@@ -1,9 +1,9 @@
 <?php if ( have_comments() ) : ?>
 <div class="comments">
   <h3>Comentários</h3>
-  <div class="comment-content">
+  <ul class="comment-content">
       <?php wp_list_comments(); ?>
-  </div>
+  </ul>
   <div class="comments-form">
     <?php comment_form(); ?>
   </div>

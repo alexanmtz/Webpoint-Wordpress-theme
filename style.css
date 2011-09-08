@@ -14,6 +14,7 @@ Tags: 960gs, two-columns, horizontal menu, widget, theme
 
 body {
  background-color: #E2DDCB;
+ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -41,7 +42,7 @@ h3 {
  * Buttons
  */
 
-.button.primary, .sidebar .menu a {
+.button.primary, .sidebar .menu a, .form-submit input {
   color: white;
   padding: 2px 12px;
   border-top: 1px solid #a5d6dd;
@@ -55,7 +56,7 @@ h3 {
   text-shadow: 0px -1px 0px #BCBCBC;
 }
 
-.button.primary:hover, .sidebar .menu a:hover {
+.button.primary:hover, .sidebar .menu a:hover, .form-submit input:hover {
   background: #8DBCBC;
   color: white;
 }
@@ -73,6 +74,10 @@ h3 {
   background: -ms-linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
   background: linear-gradient(top, #f9f9f9 0%,#eeeeee 42%,#eeeeee 56%,#e3e3e3 100%); /* W3C */
+}
+
+.button.secondary {
+  background: #8DBCBC;
 }
 
 /*
@@ -456,6 +461,76 @@ h3 {
   float: left;
   width: 90%;
   overflow: hidden;
+}
+
+.comments {
+  margin: 20px;
+}
+
+.comments h3 {
+  color: #6d6fc2;
+  font-size: 16px;
+}
+
+.comment {
+  border: 1px solid #999;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.comment-author {
+  color: #666;
+  padding: 0 5px;
+  margin: 5px 0;
+}
+
+.commentmetadata {
+  margin: 10px 0;
+}
+
+#commentform {
+  border: 1px solid #999;
+  background-color: #e7e9e9;
+  overflow: hidden;
+  color: #666;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+#commentform .comment-form-author label, #commentform .comment-form-email label {
+   margin-left: 10px;
+}
+
+#commentform label {
+  display: block;
+}
+
+#commentform input, #commentform textarea {
+  border: 1px solid #666;
+  color: #666;
+}
+
+#commentform input {
+  height: 20px;
+}
+
+#commentform .comment-form-author .required, #commentform .comment-form-email .required {
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#commentform p {
+  position: relative;
+}
+
+#commentform .form-submit {
+  float: right;
+}
+
+#commentform .form-submit input {
+  color: white;
 }
 
 /*

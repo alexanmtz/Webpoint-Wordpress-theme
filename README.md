@@ -15,4 +15,6 @@ Version history
 * 1.1.0
   * Basic comment system
   * Defaul font set to verdana
+* 1.1.1
+  * Facebook comments
    

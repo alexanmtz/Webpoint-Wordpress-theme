@@ -1,10 +1,10 @@
 ## Webpoint theme ##
 
-This is a Wordpress theme of my blog. It can be used for study because I explore a lot of features of the new Wordpress 3.
+This is a Wordpress theme of my blog. It can be used for study.
 
 The features of the theme include:
 * Multilingual
-* Widget Areas
+* Sidebar widget
 * 960 Grid System
 
 Version history
@@ -12,4 +12,7 @@ Version history
 * 1.0.2
   * Turning flexible list sidebar
   * Normalizing the category list in post
+* 1.1.0
+  * Basic comment system
+  * Defaul font set to verdana
    

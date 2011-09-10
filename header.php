@@ -25,6 +25,7 @@
 <!--  javascripts -->
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.4.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.superfish.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.supersubs.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 <?php wp_head(); ?>
 </head>

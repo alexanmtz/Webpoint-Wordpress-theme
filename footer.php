@@ -2,8 +2,8 @@
     </div>
       <div class="footer">
         <?php foreach(get_categories_with_posts() as $cat) : ?>
-	        <div class="column grid_2">
 	        <?php if (get_category_children($cat->cat_ID) != "") :?>
+	        <div class="column grid_2">
 	           <h2><?php echo $cat->cat_name; ?></h2>
 	           <ul>
 	           <?php wp_list_categories( array(
@@ -13,9 +13,9 @@
 	                       'child_of' => $cat->cat_ID
 	                  )); ?>
 	           </ul>
-	           <?php endif; ?>
 	        </div>
-	         <?php endforeach; ?>
+	        <?php endif; ?>
+	        <?php endforeach; ?>
       </div>
       <div class="bottombar">
           <ul class="horizontal-list">

@@ -8,6 +8,8 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
+* 1.1.6
+  * fixing category listing in footer
 * 1.1.4
   * Decreasing font-size
   * footer category listing just with one level

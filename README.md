@@ -8,7 +8,9 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
-
+* 1.1.4
+  * Decreasing font-size
+  * footer category listing just with one level
 * 1.1.3
   * Menu improvements
   * Post thumbnail

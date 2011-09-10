@@ -24,9 +24,9 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <!--  javascripts -->
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.4.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.superfish.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.hoverIntent.minified.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.supersubs.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.superfish.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 <?php wp_head(); ?>
 </head>

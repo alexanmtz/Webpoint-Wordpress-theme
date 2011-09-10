@@ -169,7 +169,6 @@ h3 {
 
 .menu-bar {
   background-color: #4D6C7F;
-  position: reltive;
 }
 
 .menu-bar li:hover {
@@ -192,15 +191,30 @@ h3 {
 }
 
 .menu-bar .children {
+  padding: 0;
   position: absolute;
-  margin: 5px -6px;
   display: none;
 }
 
 .menu-bar .children li {
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
+ul.menu li:hover li ul {
+  top:      -999em;
+}
+ul.menu li li:hover ul {
+  left:     10em; /* match ul width */
+  top:      0;
+}
+ul.menu li li:hover li ul {
+  top:      -999em;
+}
+ul.menu li li li:hover ul {
+  left:     10em; /* match ul width */
+  top:      0;
+}
 
 /*
  * sidebar and content

@@ -9,6 +9,10 @@ The features of the theme include:
 
 Version history
 
+* 1.0.3
+  * Menu improvements
+  * Post thumbnail
+  * Footer category listing
 * 1.0.2
   * Turning flexible list sidebar
   * Normalizing the category list in post

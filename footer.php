@@ -1,18 +1,20 @@
 <div class="grid_16">
     </div>
       <div class="footer">
-        <?php foreach(get_categories('number=4') as $cat) : ?>
-        <div class="column grid_2">
-           <h2><?php echo $cat->category_nicename; ?></h2>
-           <ul>
-           <?php wp_list_categories( array(
-                      'title_li' => '',
-                      'hide_empty' => 1,
-                       'child_of' => $cat->cat_ID
-                  )); ?>
-           </ul>
-        </div>
-        <?php endforeach; ?>
+        <?php foreach(get_categories_with_posts() as $cat) : ?>
+	        <div class="column grid_2">
+	        <?php if (get_category_children($cat->cat_ID) != "") :?>
+	           <h2><?php echo $cat->cat_name; ?></h2>
+	           <ul>
+	           <?php wp_list_categories( array(
+	                      'title_li' => '',
+	                      'hide_empty' => 0,
+	                       'child_of' => $cat->cat_ID
+	                  )); ?>
+	           </ul>
+	           <?php endif; ?>
+	        </div>
+	         <?php endforeach; ?>
       </div>
       <div class="bottombar">
           <ul class="horizontal-list">

@@ -16,6 +16,18 @@ if(is_single())
   }
 }
 
+function categories_has_child($cat) {
+   if(!$cat->category_parent) {
+   	return true;
+   }
+}
+
+function get_categories_with_posts() {
+	$categories = get_categories();
+	$categories_filtered = array_filter($categories, "categories_has_child");
+	return $categories_filtered;
+}
+
 if(function_exists('register_sidebar')) {
 
    register_sidebar(array(

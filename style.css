@@ -170,35 +170,35 @@ h3 {
 .menu-bar {
   background-color: #4D6C7F;
   position: reltive;
-
 }
 
-.menu-bar li, .menu-bar .children li {
-  padding: 6px;
-}
-
-.menu-bar .children li {
-  margin-left: 0;
+.menu-bar li:hover {
+  background-color: #0A3A56;
 }
 
 .menu-bar a {
   color: white;
+  display: block;
+  padding: 6px;
 }
 
-.menu-bar li:hover, .menu-bar .children li:hover {
-  background-color: #8BACBF;
-  color: #0A3A56;
+.menu-bar li a:hover, .menu-bar .children li a:hover {
+  background-color: #0A3A56;
+}
+
+.menu-bar li:hover .children {
+  background-color: #0A3A56;
+  margin: 0;
 }
 
 .menu-bar .children {
   position: absolute;
-  background-color: #8BACBF;
   margin: 5px -6px;
   display: none;
 }
 
 .menu-bar .children li {
-  float: none;
+  margin-left: 0;
 }
 
 

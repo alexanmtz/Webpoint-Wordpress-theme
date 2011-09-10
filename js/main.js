@@ -4,8 +4,9 @@
 
  $(function(){
    $('.menu').supersubs({
-            minWidth:    5,   // minimum width of sub-menus in em units
-            maxWidth:    40    // extra width can ensure lines don't sometimes turn over
+            minWidth:    10,   // minimum width of sub-menus in em units
+            maxWidth:    40,
+            extraWidth:  1    // extra width can ensure lines don't sometimes turn over
                                // due to slight rounding differences and font-family
         }).superfish({
             delay:       100,                            // one second delay on mouseout

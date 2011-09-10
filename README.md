@@ -9,11 +9,11 @@ The features of the theme include:
 
 Version history
 
-* 1.0.3
+* 1.1.3
   * Menu improvements
   * Post thumbnail
   * Footer category listing
-* 1.0.2
+* 1.1.2
   * Turning flexible list sidebar
   * Normalizing the category list in post
 * 1.1.0

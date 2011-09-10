@@ -382,6 +382,10 @@ h3 {
  * Post
  */
 
+img.wp-post-image {
+  border: 4px solid #EFE6E6;
+}
+
 .post-list {
   margin: 10px;
 }

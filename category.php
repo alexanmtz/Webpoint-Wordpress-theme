@@ -19,7 +19,11 @@
                    <span class="month"><?php the_time('M') ?></span>
                  </p>
                 </div>
-                <img src="<?php bloginfo('template_directory'); ?>/images/thumb-test.png" width="115" height="122" alt="descricao" />
+                <?php if(has_post_thumbnail()) : ?>
+                 <a class="image-link" href="<?php the_permalink(); ?>">
+                   <?php the_post_thumbnail( array('width'=> 115, 'height' => 122) ); ?>
+                 </a>
+                <?php endif; ?>
                 <div class="content">
                   <?php the_excerpt(); ?>
                 </div>

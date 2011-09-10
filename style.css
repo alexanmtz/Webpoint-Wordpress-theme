@@ -163,12 +163,64 @@ h3 {
   display: none;
 }
 
+/* menu dropdown essentials */
+
+/*** ESSENTIAL STYLES ***/
+.menu, .menu * {
+  margin:     0;
+  padding:    0;
+  list-style:   none;
+}
+
+.menu ul {
+  position:   absolute;
+  top:      -999em;
+  width:      10em; /* left offset of submenus need to match (see below) */
+}
+.menu ul li {
+  width:      100%;
+}
+.menu li:hover {
+  visibility:   inherit; /* fixes IE7 'sticky bug' */
+}
+.menu li {
+  float:      left;
+  position:   relative;
+}
+.menu a {
+  display:    block;
+  position:   relative;
+}
+.menu li:hover ul {
+  left:     0;
+  top:      2.5em; /* match top ul list item height */
+  z-index:    99;
+}
+ul.menu li:hover li ul {
+  top:      -999em;
+}
+ul.menu li li:hover ul {
+  left:     10em; /* match ul width */
+  top:      0;
+}
+ul.menu li li:hover li ul {
+  top:      -999em;
+}
+ul.menu li li li:hover ul {
+  left:     10em; /* match ul width */
+  top:      0;
+}
+
 /*
  * menu bar
  */
 
 .menu-bar {
   background-color: #4D6C7F;
+}
+
+.menu-bar li {
+  margin: 0 5px;
 }
 
 .menu-bar li:hover {
@@ -178,7 +230,7 @@ h3 {
 .menu-bar a {
   color: white;
   display: block;
-  padding: 6px;
+  padding: 7px;
 }
 
 .menu-bar li a:hover, .menu-bar .children li a:hover {
@@ -199,21 +251,6 @@ h3 {
 .menu-bar .children li {
   margin: 0;
   padding: 0;
-}
-
-ul.menu li:hover li ul {
-  top:      -999em;
-}
-ul.menu li li:hover ul {
-  left:     10em; /* match ul width */
-  top:      0;
-}
-ul.menu li li:hover li ul {
-  top:      -999em;
-}
-ul.menu li li li:hover ul {
-  left:     10em; /* match ul width */
-  top:      0;
 }
 
 /*

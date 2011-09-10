@@ -4,7 +4,7 @@
 
  $(function(){
    $('.menu').supersubs({
-            minWidth:    15,   // minimum width of sub-menus in em units
+            minWidth:    5,   // minimum width of sub-menus in em units
             maxWidth:    40    // extra width can ensure lines don't sometimes turn over
                                // due to slight rounding differences and font-family
         }).superfish({

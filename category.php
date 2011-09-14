@@ -15,7 +15,12 @@
           <ul>
              <?php while ( have_posts() ) : the_post(); ?>
              <li class="post-item">
-                <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+                <h2>
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                  <?php if(function_exists('my_share_links')) : ?>
+                  <?php my_share_links(); ?>
+                  <?php endif; ?>
+                </h2>
                 <div class="date-info">
                   <p>
                    <span class="week-day"><?php the_time('D') ?></span>

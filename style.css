@@ -501,6 +501,10 @@ img.wp-post-image {
   font-size: 23px;
 }
 
+.post-item .read-all {
+  float: right;
+}
+
 /*
  * Full post
  */

@@ -6,12 +6,16 @@
         <!--  single post in primary news -->
         <div class="post-list primary">
          <div class="breadcrumb">
-            <a href="<?php bloginfo('url'); ?>"><?php _e('home')?></a> &raquo; <span class="current"><?php single_cat_title(); ?></span>
+            <a href="<?php bloginfo('url'); ?>"><?php _e('home')?></a>
+            <?php $cat_title = single_cat_title('',false); ?>
+            &raquo;
+            <?php echo get_category_parents(get_cat_ID($cat_title), true, ' &raquo; '); ?>
+            <span class="current">Posts em <?php echo $cat_title; ?> </span>
           </div>
           <ul>
              <?php while ( have_posts() ) : the_post(); ?>
              <li class="post-item">
-                <h2><a href="<?php the_permalink(); ?>" title="title"><?php the_title(); ?></a></h2>
+                <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                 <div class="date-info">
                   <p>
                    <span class="week-day"><?php the_time('D') ?></span>

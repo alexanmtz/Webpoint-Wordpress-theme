@@ -16,15 +16,21 @@ if(is_single())
   }
 }
 
-function categories_has_child($cat) {
+function categories_is_child($cat) {
    if(!$cat->category_parent) {
    	return true;
    }
 }
 
+function category_has_parent($cat) {
+  if($cat->category_parent) {
+    return true;
+   }
+}
+
 function get_categories_with_posts() {
 	$categories = get_categories();
-	$categories_filtered = array_filter($categories, "categories_has_child");
+	$categories_filtered = array_filter($categories, "categories_is_child");
 	return $categories_filtered;
 }
 

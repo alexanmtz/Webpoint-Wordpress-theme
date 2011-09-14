@@ -265,6 +265,8 @@ ul.menu li li li:hover ul {
   font-family: 'Nunito', sans-serif;
   background-color: none;
   text-decoration: none;
+  display: block;
+  float: left;
   color: #A60000;
   -moz-text-shadow: 2px 2px 1px #E5D2CC;
   -webkit-text-shadow: 2px 2px 1px #E5D2CC;
@@ -498,7 +500,7 @@ img.wp-post-image {
  */
 
 .post-item h2 {
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .post-item .read-all {

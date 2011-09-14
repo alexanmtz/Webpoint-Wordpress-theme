@@ -8,6 +8,8 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
+* 1.1.14
+  * Breadcrumb getting all template hierarchy
 * 1.1.9
   * fixing menu when hover it
 * 1.1.8

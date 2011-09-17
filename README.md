@@ -8,6 +8,8 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
+* 1.1.16
+  * Enhancement in social share bar
 * 1.1.15
   * Breadcrumb getting all template hierarchy
 * 1.1.9

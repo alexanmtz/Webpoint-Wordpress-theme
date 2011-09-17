@@ -460,6 +460,26 @@ img.wp-post-image {
   display: block;
 }
 
+/*
+ * Page
+ */
+
+.page .shareinpost {
+  overflow: hidden;
+  padding: 7px;
+  float: right;
+  background-color: #9AC3C4;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/*
+ * Taxonomy
+ */
 .taxonomy {
   margin: 0;
   overflow: hidden;

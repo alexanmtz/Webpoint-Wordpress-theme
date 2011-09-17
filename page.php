@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <!--  main content -->
     <div class="main-content grid_16">
-      <div class="grid_11 alpha primary news">
+      <div class="grid_11 alpha primary news page">
         <?php while ( have_posts() ) : the_post(); ?>
           <div class="post-full">
             <h2><?php the_title(); ?></h2>

@@ -49,7 +49,10 @@
                 </ul>
 	           </li>
 	           <?php endwhile; ?>
-	           <?php wp_reset_postdata();?>
+	           <div class="navigation">
+	             <?php posts_nav_link(' - ', __('« mais novas'), __('mais antigas »')); ?>
+	           </div>
+             <?php wp_reset_postdata();?>
 	        </ul>
 	      </div>
 	      <!--  end of single post in primary news -->

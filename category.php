@@ -49,6 +49,9 @@
                 <?php endif; ?>
              </li>
              <?php endwhile; ?>
+              <div class="navigation">
+               <?php posts_nav_link(' - ', __('« mais novas'), __('mais antigas »')); ?>
+             </div>
           </ul>
         </div>
         <!--  end of single post in primary news -->

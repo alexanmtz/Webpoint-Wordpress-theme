@@ -8,6 +8,8 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
+* 1.1.22
+  * Comments in post listing and category listing and show year in comments"
 * 1.1.20
   * Navigation to see older posts in home and category
 * 1.1.19

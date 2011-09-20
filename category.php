@@ -26,6 +26,7 @@
                    <span class="week-day"><?php the_time('D') ?></span>
                    <span class="day"><?php the_time('d') ?></span>
                    <span class="month"><?php the_time('M') ?></span>
+                   <span class="year"><?php the_time('Y') ?></span>
                  </p>
                 </div>
                 <div class="post-comments">

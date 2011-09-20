@@ -28,6 +28,9 @@
                    <span class="month"><?php the_time('M') ?></span>
                  </p>
                 </div>
+                <div class="post-comments">
+                 <?php comments_popup_link(__('Nenhum coment&aacute;rio'), __('1 Coment&aacute;rio'), __('% Coment&aacute;rios')); ?>
+                </div>
                 <?php if(has_post_thumbnail()) : ?>
                  <a class="image-link" href="<?php the_permalink(); ?>">
                    <?php the_post_thumbnail( array('width'=> 115, 'height' => 122) ); ?>

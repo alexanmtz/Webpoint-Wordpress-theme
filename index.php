@@ -19,7 +19,11 @@
 			             <span class="week-day"><?php the_time('D') ?></span>
 			             <span class="day"><?php the_time('d') ?></span>
 			             <span class="month"><?php the_time('M') ?></span>
+			             <span class="year"><?php the_time('Y') ?></span>
 			           </p>
+			          </div>
+			          <div class="post-comments">
+			           <?php comments_popup_link(__('Nenhum coment&aacute;rio'), __('1 Coment&aacute;rio'), __('% Coment&aacute;rios')); ?>
 			          </div>
 			          <?php if(has_post_thumbnail()) : ?>
 	               <a class="image-link" href="<?php the_permalink(); ?>">

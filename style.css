@@ -470,6 +470,13 @@ img.wp-post-image {
   display: block;
 }
 
+.post-item .post-comments {
+  background: url('images/ico-comments.png') no-repeat 0 0 scroll;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
 /*
  * Page
  */
@@ -531,6 +538,7 @@ img.wp-post-image {
 
 .post-item h2 {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .post-item .read-all {
@@ -658,6 +666,7 @@ img.wp-post-image {
 
 .date-info {
   float: right;
+  font-size: 11px;
 }
 
 .date-info p {
@@ -671,6 +680,10 @@ img.wp-post-image {
   display: block;
   margin: -5px 0;
   text-align: center;
+}
+
+.date-info .month {
+  margin: -8px 0 2px;
 }
 
 .date-info .week-day {

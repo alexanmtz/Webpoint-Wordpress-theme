@@ -8,6 +8,9 @@ The features of the theme include:
 * 960 Grid System
 
 Version history
+* 1.2.0
+  * Topbar theme widget support
+  * language-switcher
 * 1.1.22
   * Comments in post listing and category listing and show year in comments"
 * 1.1.20

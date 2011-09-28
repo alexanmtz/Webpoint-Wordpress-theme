@@ -49,7 +49,7 @@
           <h1 class="branding">
             <a href="<?php bloginfo('url'); ?>" title="webpoint"><span>Webpoint</span></a>
           </h1>
-          <quote>Weblosofia com desenvolvimento web</quote>
+          <quote><?php bloginfo('tagline'); ?></quote>
       </div>
       <div class="titlebar-widget">
         <?php dynamic_sidebar( 'topbar' ); ?>

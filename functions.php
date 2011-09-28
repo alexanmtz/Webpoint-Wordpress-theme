@@ -48,6 +48,20 @@ if(function_exists('register_sidebar')) {
 
 }
 
+if(function_exists('register_sidebar')) {
+
+   register_sidebar(array(
+    'id'          => 'topbar',
+    'name'        => __( 'barra do topo'),
+    'description' => __( 'widgets from the top area'),
+    'before_widget' => '<li class="box widget toparea">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+    ) );
+
+}
+
 if ( function_exists( 'add_theme_support' ) ) {
   add_theme_support( 'post-thumbnails' );
 }

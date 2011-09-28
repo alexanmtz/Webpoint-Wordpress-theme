@@ -169,8 +169,21 @@ h3 {
   display: block;
 }
 
+.title-bar .branding {
+
+}
+
+.title-bar .logo {
+  float: left;
+  width: 450px;
+}
+
 .title-bar .branding span {
   display: none;
+}
+
+.titlebar-widget {
+  float: right;
 }
 
 /* menu dropdown essentials */

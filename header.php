@@ -45,10 +45,15 @@
       <?php endif; ?>
     </div>
     <div class="grid_16 title-bar">
-      <h1 class="branding">
-       <a href="<?php bloginfo('url'); ?>" title="webpoint"><span>Webpoint</span></a>
-      </h1>
-      <quote>Weblosofia com desenvolvimento web</quote>
+      <div class="logo">
+          <h1 class="branding">
+            <a href="<?php bloginfo('url'); ?>" title="webpoint"><span>Webpoint</span></a>
+          </h1>
+          <quote>Weblosofia com desenvolvimento web</quote>
+      </div>
+      <div class="titlebar-widget">
+        <?php dynamic_sidebar( 'topbar' ); ?>
+      </div>
     </div>
     <div class="grid_16 menu-bar">
        <ul class="menu horizontal-list">

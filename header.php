@@ -6,6 +6,7 @@
 <!--  meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+<meta name="google-site-verification" content="_wqddL2l7Z6NwVQ0N2uq3gROpfFiwIMvYBY8re0WVjw" />
 
 <!--  favicon -->
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
@@ -35,11 +36,13 @@
 <div class="container_16 wrap">
   <div class="main">
     <div class="grid_16 topbar">
-      <!--  <ul class="horizontal-list">
-        <li><a class="br" href="#" title="alterar indioma do site para português"><span></span>Portugês</a></li>
-        <li><a class="en" href="#" title="change language to english"><span></span>Inglês</a></li>
+      <?php if(function_exists('icl_get_languages')) : ?>
+      <ul class="horizontal-list">
+        <?php foreach(icl_get_languages('skip_missing=N&orderby=KEY&order=DIR') as $language) :?>
+          <li><a class="<?php echo $language['language_code']; ?>" href="<?php echo $language['url']; ?>" title="<?php _e('Alterar idioma para '); echo $language['native_name']; ?>"><span></span><?php echo $language['native_name'] ?></a></li>
+        <?php endforeach; ?>
       </ul>
-      -->
+      <?php endif; ?>
     </div>
     <div class="grid_16 title-bar">
       <h1 class="branding">

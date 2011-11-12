@@ -43,7 +43,7 @@
                 <?php if(has_tag()) : ?>
                 <ul class="taxonomies horizontal-list">
                   <li class="tags">
-                    <h4><span>Tags</span></h4>
+                    <h4><span><?php __('Tags') ?></span></h4>
                     <ul class="taxonomy">
                      <?php
                       ?>

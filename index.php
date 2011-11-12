@@ -35,14 +35,14 @@
                 </div>
                 <ul class="taxonomies horizontal-list">
                   <li class="categories">
-                    <h4><span>Categories</span></h4>
+                    <h4><span><?php __('Categories') ?></span></h4>
                      <div class="taxonomy">
 			                  <?php the_category(); ?>
                      </div>
                   </li>
                   <?php if(has_tag()) : ?>
                   <li class="tags">
-                    <h4><span>Tags</span></h4>
+                    <h4><span><?php __('Tags') ?></span></h4>
                     <ul class="taxonomy">
 		                 <?php
                         echo get_the_tag_list('<li>','','</li>');

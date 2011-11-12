@@ -19,8 +19,8 @@
       </div>
       <div class="bottombar">
           <ul class="horizontal-list">
-            <li><a href="<?php bloginfo('rss_url'); ?>" title="<?php __('assinar feed de notícias') ?>"><span></span><?php __('feed de notícias') ?></a></li>
-            <li><a href="<?php bloginfo('comments_rss2_url'); ?>" title="<?php __('assinar feed de comentários') ?>"><span></span><?php __('feed de comentários') ?></a></li>
+            <li><a href="<?php bloginfo('rss_url'); ?>" title="<?php _e('assinar feed de notícias') ?>"><span></span><?php _e('feed de notícias') ?></a></li>
+            <li><a href="<?php bloginfo('comments_rss2_url'); ?>" title="<?php _e('assinar feed de comentários') ?>"><span></span><?php _e('feed de comentários') ?></a></li>
           </ul>
         </div>
     </div>

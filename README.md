@@ -8,7 +8,7 @@
 * 960 Grid System
 
 ### Version history
-* 1.2.1
+* 1.2.6
   * Fixing bug when navigating through category. Issue 1.
 * 1.2.0
   * Topbar theme widget support

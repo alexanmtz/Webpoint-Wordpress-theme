@@ -9,7 +9,7 @@
             <a href="<?php bloginfo('url'); ?>"><?php _e('home')?></a>
             <?php $cat_title = single_cat_title('',false); ?>
             &raquo;
-            <?php echo get_category_parents(get_cat_ID($cat_title), true, ' &raquo; '); ?>
+            <a href="<?php echo get_category_link(get_cat_ID($cat_title)); ?>" title="<?php echo $cat_title; ?>"><?php echo get_category_parents(get_cat_ID($cat_title), false, ' &raquo; '); ?></a>
             <span class="current"><?php _e('Posts em') ?> <?php echo $cat_title; ?> </span>
           </div>
           <ul>

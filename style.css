@@ -35,6 +35,7 @@ h3 {
 
 .horizontal-list li  {
   float: left;
+  list-style-type: none;
 }
 
 

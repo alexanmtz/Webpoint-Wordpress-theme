@@ -25,6 +25,10 @@ li {
   list-style-type: none;
 }
 
+.post-full li {
+  list-style-type: circle;
+}
+
 h3 {
   font-size: 16px;
 }

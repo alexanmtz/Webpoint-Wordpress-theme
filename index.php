@@ -37,7 +37,7 @@
                   <li class="categories">
                     <h4><span><?php __('Categories') ?></span></h4>
                      <div class="taxonomy">
-			                  <?php the_category(); ?>
+		                  <?php echo the_category(); ?>
                      </div>
                   </li>
                   <?php if(has_tag()) : ?>

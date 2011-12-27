@@ -1,6 +1,7 @@
 <?php
 
 add_action('wp_list_categories','wp_list_categories_hook_relative_path');
+add_filter('the_category','wp_list_categories_hook_relative_path');
 function wp_list_categories_hook_relative_path( $output ) {
   return str_replace( get_bloginfo('wpurl').'/en/','/', $output );
 }

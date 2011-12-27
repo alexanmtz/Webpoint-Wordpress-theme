@@ -10,7 +10,7 @@
             <?php $cat_title = single_cat_title('',false); ?>
             &raquo;
             <?php echo get_category_parents(get_cat_ID($cat_title), true, ' &raquo; '); ?>
-            <span class="current">Posts em <?php echo $cat_title; ?> </span>
+            <span class="current"><?php _e('Posts em') ?> <?php echo $cat_title; ?> </span>
           </div>
           <ul>
              <?php while ( have_posts() ) : the_post(); ?>

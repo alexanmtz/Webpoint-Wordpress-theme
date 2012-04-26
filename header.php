@@ -19,8 +19,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
 <!--  google fonts api stylesheets -->
-<link href='http://fonts.googleapis.com/css?family=Artifika&v1' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Nunito&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
 
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <!--  javascripts -->

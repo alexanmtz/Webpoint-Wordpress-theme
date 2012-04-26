@@ -84,6 +84,10 @@ h3 {
 
 }
 
+.navigation a {
+  padding: 6px !important;
+}
+
 .button.secondary:hover, .navigation a:hover {
   background: #5b719b; /* Old browsers */
   background: -moz-linear-gradient(top, #5b719b 0%, #3f4c6b 100%); /* FF3.6+ */
@@ -559,6 +563,7 @@ img.wp-post-image {
 .post-item h2 {
   font-size: 18px;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .post-item .read-all {
@@ -703,13 +708,18 @@ img.wp-post-image {
 }
 
 .date-info .month {
-  margin: -8px 0 2px;
+  margin: 1px 0 2px;
+  font-size: 9px;
 }
 
 .date-info .week-day {
   color: white;
   margin: 5px 9px;
   padding: 4px;
+}
+
+.date-info .year {
+  font-size: 9px;
 }
 
 /*

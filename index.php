@@ -9,7 +9,7 @@
              <?php while ( have_posts() ) : the_post(); ?>
 	           <li class="post-item">
 	              <h2>
-	               <a href="<?php the_permalink(); ?>" title="<?php the_excerpt(); ?>"><?php the_title(); ?></a>
+	               <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 	               <?php if(function_exists('my_share_links')) : ?>
                  <?php my_share_links(); ?>
                  <?php endif; ?>
@@ -21,9 +21,6 @@
 			             <span class="month"><?php the_time('M') ?></span>
 			             <span class="year"><?php the_time('Y') ?></span>
 			           </p>
-			          </div>
-			          <div class="post-comments">
-			           <?php comments_popup_link(__('Nenhum coment&aacute;rio'), __('1 Coment&aacute;rio'), __('% Coment&aacute;rios')); ?>
 			          </div>
 			          <?php if(has_post_thumbnail()) : ?>
 	               <a class="image-link" href="<?php the_permalink(); ?>">
@@ -51,6 +48,9 @@
                   </li>
                   <?php endif; ?>
                 </ul>
+                 <div class="post-comments">
+                 <?php comments_popup_link(__('0'), __('1'), __('%')); ?>
+                </div>
 	           </li>
 	           <?php endwhile; ?>
 	           <div class="navigation">

@@ -7,7 +7,11 @@
 * Sidebar widget
 * 960 Grid System
 
+
 ### Version history
+* 1.3
+  * Following a palette from a scheme
+  * Changing pagination links from posts
 * 1.2.8
   * Fixing bug when navigating through category. Issue 1.
 * 1.2.0

@@ -9,7 +9,7 @@
              <?php while ( have_posts() ) : the_post(); ?>
 	           <li class="post-item">
 	              <h2>
-	               <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+	               <a href="<?php the_permalink(); ?>" title="<?php the_excerpt(); ?>"><?php the_title(); ?></a>
 	               <?php if(function_exists('my_share_links')) : ?>
                  <?php my_share_links(); ?>
                  <?php endif; ?>
@@ -54,7 +54,7 @@
 	           </li>
 	           <?php endwhile; ?>
 	           <div class="navigation">
-	             <?php posts_nav_link(' - ', __('« mais novas'), __('mais antigas »')); ?>
+	             <?php posts_nav_link(' - ', __('próximos posts'), __('posts anteriores')); ?>
 	           </div>
              <?php wp_reset_postdata();?>
 	        </ul>

@@ -3,7 +3,7 @@
     <div class="main-content grid_16">
       <div class="grid_11 alpha primary news">
         <?php while ( have_posts() ) : the_post(); ?>
-          <div class="post-full">
+          <div class="post-full post-single">
             <h2><?php the_title(); ?></h2>
                 <div class="date-info">
                   <p>

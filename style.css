@@ -67,7 +67,7 @@ h3 {
   color: white;
 }
 
-.button.secondary, .navigation a {
+.button.secondary {
   color: white !important;
   padding: 20px;
   font-size: 11px;
@@ -88,10 +88,20 @@ h3 {
 }
 
 .navigation a {
+  border: 1px solid #412C84;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ACA7C9;
+  font-weight: bold;
   padding: 6px !important;
 }
 
-.button.secondary:hover, .navigation a:hover {
+.navigation a:hover {
+  background: #D0CAF7; /* Old browsers */
+}
+
+.button.secondary:hover {
   background: #5b719b; /* Old browsers */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b719b), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #5b719b 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
@@ -292,6 +302,10 @@ ul.menu li li li:hover ul {
 /*
  * sidebar and content
  */
+
+.content {
+  
+}
 
 .main-content {
   font-family: 'Open Sans', "Helvetica Neue", "Arial", "sans-serif";
@@ -704,6 +718,10 @@ img.wp-post-image {
 .date-info {
   float: right;
   font-size: 11px;
+}
+
+.post-single .date-info {
+  margin-top: -22px;
 }
 
 .date-info p {

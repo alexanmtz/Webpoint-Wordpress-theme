@@ -8,7 +8,7 @@
               <?php $related = new WP_Query( array('posts_per_page' => 10, 'orderby' => 'rand' ) ); ?>
 		          <?php while ( $related->have_posts() ) : $related->the_post(); ?>
 		             <li>
-		              <a href="<?php the_permalink(); ?>" title="#"><?php the_title(); ?></a>
+		              <a href="<?php the_permalink(); ?>" title="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		             </li>
 		          <?php endwhile; ?>
 		          </ul>

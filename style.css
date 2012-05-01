@@ -159,6 +159,11 @@ h3 {
   background-image: url('images/ico-usa.png');
 }
 
+.topbar .active {
+  background-color: #5F9391;
+  padding: 7px 7px 7px 2px;
+}
+
 /*
  * title
  */

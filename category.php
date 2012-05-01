@@ -30,7 +30,7 @@
                  </p>
                 </div>
                 <div class="post-comments">
-                 <?php comments_popup_link(__('Nenhum coment&aacute;rio'), __('1 Coment&aacute;rio'), __('% Coment&aacute;rios')); ?>
+                 <?php comments_popup_link(__('0'), __('1'), __('%')); ?>
                 </div>
                 <?php if(has_post_thumbnail()) : ?>
                  <a class="image-link" href="<?php the_permalink(); ?>">

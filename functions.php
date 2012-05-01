@@ -6,6 +6,18 @@ function wp_list_categories_hook_relative_path( $output ) {
   return str_replace( get_bloginfo('wpurl').'/en/','/', $output );
 }
 
+if(!function_exists('icl_get_languages')) {
+  function icl_get_languages($str) {
+    $languages = array(array(
+      'active' => 1,
+      'language_code' => 'pt-br',
+      'url' => 'http://brazilian_trans',
+      'native_name' => 'Português'
+    ));
+    return $languages;
+  }  
+}
+
 add_theme_support('post-thumbnails');
 
 function smart_title() {

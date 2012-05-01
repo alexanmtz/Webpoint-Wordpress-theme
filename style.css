@@ -44,6 +44,10 @@ h3 {
   background-color: #D4CFBB;
 }
 
+#tooltip {
+  font-size: 12px !important;
+}
+
 /*
  * Buttons
  */

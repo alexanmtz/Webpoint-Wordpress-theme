@@ -44,7 +44,7 @@ h3 {
   background-color: #D4CFBB;
 }
 
-#tooltip {
+#tooltip  h3 {
   font-size: 12px !important;
 }
 

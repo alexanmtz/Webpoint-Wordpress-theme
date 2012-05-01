@@ -9,6 +9,8 @@
 
 
 ### Version history
+* 1.3.2
+  * Layout fixes
 * 1.3
   * Following a palette from a scheme
   * Changing pagination links from posts

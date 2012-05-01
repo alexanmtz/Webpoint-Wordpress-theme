@@ -303,7 +303,7 @@ ul.menu li li li:hover ul {
  * sidebar and content
  */
 
-.content {
+.post-single .content {
   clear: both;
 }
 

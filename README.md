@@ -9,8 +9,9 @@
 
 
 ### Version history
-* 1.3.2
-  * Layout fixes
+* 1.3.9
+  * fixing a bug in comments template that only show comment form if have some comment
+  * Skip language set to false
 * 1.3
   * Following a palette from a scheme
   * Changing pagination links from posts

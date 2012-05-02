@@ -37,7 +37,7 @@
     <div class="grid_16 topbar">
       <?php if(function_exists('icl_get_languages')) : ?>
       <ul class="horizontal-list language-bar">
-        <?php foreach(icl_get_languages('skip_missing=1&orderby=KEY&order=DIR') as $language) :?>
+        <?php foreach(icl_get_languages('skip_missing=0&orderby=KEY&order=DIR') as $language) :?>
           <?php $active = $language['active'] ? 'active' : ''; ?>
           <li><a class="<?php echo $active; ?> <?php echo $language['language_code']; ?>" href="<?php echo $language['url']; ?>" title="<?php _e('Alterar idioma para '); echo $language['native_name']; ?>"><span></span><?php echo $language['native_name'] ?></a></li>
         <?php endforeach; ?>

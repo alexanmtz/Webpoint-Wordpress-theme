@@ -14,7 +14,7 @@ Tags: 960gs, two-columns, horizontal menu, widget, theme
 
 body {
  background-color: #E2DDCB;
- font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-family: 'Open Sans', "Helvetica Neue", "Arial", "sans-serif";;
 }
 
 a {
@@ -165,7 +165,7 @@ h3 {
 
 .topbar .active {
   background-color: #5F9391;
-  padding: 7px 7px 7px 2px;
+  padding: 7px 2px;
 }
 
 /*
@@ -317,15 +317,15 @@ ul.menu li li li:hover ul {
 }
 
 .main-content {
-  font-family: 'Open Sans', "Helvetica Neue", "Arial", "sans-serif";
+  
 }
 
-.main-content a {
-  color: #200772 !important;
+.main-content a, .post-full h2 {
+  color: #184B8E !important;
 }
 
 .main-content a:hover {
-  color: #412C84 !important;
+  color: #286AC1 !important;
 }
 
 .main-content h2 {
@@ -338,21 +338,19 @@ ul.menu li li li:hover ul {
   text-decoration: none;
   display: block;
   float: left;
-  color: #A60000;
-  -moz-text-shadow: 1px 1px 1px #E5D2CC;
-  -webkit-text-shadow: 1px 1px 1px #E5D2CC;
-  text-shadow: 1px 1px 1px #E5D2CC;
+  color: #286AC1;
+  
 }
 
 .main-content h2 a:hover {
   background: none;
   border-bottom: none;
-  color: #FF4040;
+  color: #286AC1;
 }
 
 .main-content a {
   text-decoration: none;
-  color: #5A4CAD;
+  color: #286AC1;
   padding: 0 3px;
 
 }

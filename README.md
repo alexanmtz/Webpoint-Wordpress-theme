@@ -9,6 +9,8 @@
 
 
 ### Version history
+* 1.3.10
+  * Design and color palete includes, and a keeping layout clean
 * 1.3.9
   * fixing a bug in comments template that only show comment form if have some comment
   * Skip language set to false

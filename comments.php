@@ -1,3 +1,4 @@
+<a name="comments"></a>
 <div class="comments">
   <?php if ( have_comments() ) : ?> 
   <h3><?php _e('Comments') ?></h3>

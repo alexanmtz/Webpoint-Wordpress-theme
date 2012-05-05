@@ -9,6 +9,8 @@
 
 
 ### Version history
+* 1.3.11
+  * The spacement in language bar and comments anchor
 * 1.3.10
   * Design and color palete includes, and a keeping layout clean
 * 1.3.9

@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+a img {
+  text-decoration: none !important;
+  background: none !important;
+  border: none !important;
+}
+
 
 li {
   list-style-type: none;
@@ -605,6 +611,8 @@ img.wp-post-image {
   float: right;
 }
 
+
+
 /*
  * Full post
  */
@@ -621,6 +629,15 @@ img.wp-post-image {
   float: left;
   width: 90%;
   overflow: hidden;
+}
+
+.wp-caption {
+  padding: 10px;
+  background-color: #F9F9F9;
+  border: 1px solid #999;
+  text-align: center;
+  font-size: 11px;
+  color: #333;  
 }
 
 /* Post list navigation */

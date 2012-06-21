@@ -98,18 +98,10 @@ h3 {
 }
 
 .navigation a {
-  border: 1px solid #412C84;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #ACA7C9;
   font-weight: bold;
-  padding: 6px !important;
 }
 
-.navigation a:hover {
-  background: #D0CAF7; /* Old browsers */
-}
+
 
 .button.secondary:hover {
   background: #5b719b; /* Old browsers */

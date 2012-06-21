@@ -54,7 +54,7 @@
 	           </li>
 	           <?php endwhile; ?>
 	           <div class="navigation">
-	             <?php posts_nav_link(' - ', __('próximos posts'), __('posts anteriores')); ?>
+	             <?php posts_nav_link(' - ', __('ir para os próximos posts'), __('ir para os posts anteriores')); ?>
 	           </div>
              <?php wp_reset_postdata();?>
 	        </ul>

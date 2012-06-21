@@ -9,6 +9,8 @@
 
 
 ### Version history
+* 1.6
+  * Caption for images
 * 1.3.11
   * The spacement in language bar and comments anchor
 * 1.3.10

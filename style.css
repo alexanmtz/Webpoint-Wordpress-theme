@@ -4,7 +4,7 @@ Theme URI: http://www.alexandremagno.net
 Description: The new Webpoint theme, using 960 grid system
 Author: Alexandre Magno
 Github Theme URI: https://github.com/alexanmtz/Webpoint-Wordpress-theme
-Version: 1.7
+Version: 2.0
 Tags: 960gs, two-columns, horizontal menu, widget, theme
 */
 
@@ -19,12 +19,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-a img {
-  text-decoration: none !important;
-  background: none !important;
-  border: none !important;
 }
 
 
@@ -117,10 +111,6 @@ h3 {
  * Links
  */
 
-.main-content .image-link:hover {
-  background: none;
-  border: none;
-}
 
 /*
  * Header
@@ -314,9 +304,6 @@ ul.menu li li li:hover ul {
   clear: both;
 }
 
-.main-content {
-  
-}
 
 .main-content a, .post-full h2 {
   color: #184B8E !important;
@@ -354,8 +341,7 @@ ul.menu li li li:hover ul {
 }
 
 .main-content a:hover {
-  background-color: #E8E6F7;
-  border-bottom: 1px solid #918BB2;
+  text-decoration: underline;
   color: #201175;
 }
 
@@ -427,28 +413,12 @@ ul.menu li li li:hover ul {
   margin-bottom: 8px;
 }
 
-.sidebar .box a {
-  color: #cd195f;
-}
-
-.sidebar .box a:hover {
-  background-color: none;
-  text-decoration: none;
-  color: #f997bd;
-  background: none;
-}
-
 .sidebar .box div {
   padding: 5px;
 }
 
 .sidebar .box li {
   margin-left: 10px;
-}
-
-
-.sidebar .menu {
-
 }
 
 
